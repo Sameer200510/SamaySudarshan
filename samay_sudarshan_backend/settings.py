@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'samay_sudarshan_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'samay_sudarshan_db',  # Tumhare database ka naam
+        'USER': 'SamaySudarshan',                # MySQL username (usually root)
+        'PASSWORD': '1212', # Tumhara MySQL password
+        'HOST': 'localhost',           # Ya tumhara MySQL server IP
+        'PORT': '3306',                # Default MySQL port
     }
 }
 
